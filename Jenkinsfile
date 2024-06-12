@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        gitParameter
-        name: 'BRANCH',
-        type: 'PT_BRANCH',
-        defaultValue: 'main',
-        description: 'Branch to deploy from',
-        useRepository: 'https://github.com/pobugi/jenkins-example2.git'
+        gitParameter name: 'BRANCH',type: 'PT_BRANCH', defaultValue: 'main', description: 'Branch to deploy from', useRepository: 'https://github.com/pobugi/jenkins-example2.git'
     }
 
     environment {
